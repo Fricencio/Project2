@@ -1,3 +1,12 @@
+html {
+  font-family: "SoDo Sans";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -65,9 +74,6 @@ header .first_part .menus {
 header .first_part .menus li a {
   text-decoration: none;
 }
-header .first_part .menus li a:hover {
-  color: #5f226b;
-}
 @media (min-width: 320px) {
   header .first_part .menus li a {
     font-size: 10px;
@@ -121,4 +127,48 @@ header .second_part {
 }
 header .second_part a {
   text-decoration: none;
+}
+
+.hero {
+  height: 50px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-color: #1e3932;
+  color: #f1f8f6;
+}
+@media (min-width: 320px) {
+  .hero {
+    padding-left: 30px;
+    font-size: 4px;
+  }
+}
+@media (min-width: 481px) {
+  .hero {
+    padding-left: 60px;
+    font-size: 6px;
+  }
+}
+@media (min-width: 769px) {
+  .hero {
+    padding-left: 90px;
+    font-size: 8px;
+  }
+}
+@media (min-width: 1025px) {
+  .hero {
+    padding-left: 120px;
+    font-size: 9px;
+  }
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #d4e9e2;
+  background: url(../pics/background/reward_background.jpeg) no-repeat center center fixed;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
