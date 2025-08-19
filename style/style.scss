@@ -1,0 +1,123 @@
+html {}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .first_part {
+        display: flex;
+        flex: 50%;
+        align-items: center;
+
+        .MainLogo {
+            @media (min-width: 320px) {
+                width: 25px;
+                height: auto;
+                padding-left: 3px;
+
+            }
+
+            @media (min-width: 481px) {
+                width: 35px;
+                height: auto;
+                padding-left: 6px;
+            }
+
+            @media (min-width: 769px) {
+                width: 55px;
+                height: auto;
+                padding-left: 9px;
+            }
+
+            @media (min-width: 1025px) {
+                width: 75px;
+                height: auto;
+                padding-left: 12px;
+            }
+        }
+
+        .menus {
+            list-style-type: none;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+
+
+            @media (min-width: 320px) {
+                gap: 4px;
+            }
+
+            @media (min-width: 481px) {
+                gap: 8px;
+            }
+
+            @media (min-width: 769px) {
+                gap: 12px;
+            }
+
+            @media (min-width: 1025px) {
+                gap: 16px;
+            }
+
+            li {
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #5f226b;
+                    }
+
+                    @media (min-width: 320px) {
+                        font-size: 10px;
+                    }
+
+                    @media (min-width: 481px) {
+                        font-size: 10px;
+                    }
+
+                    @media (min-width: 769px) {
+                        font-size: 15px;
+                    }
+
+                    @media (min-width: 1025px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .second_part {
+        display: flex;
+        flex: 50%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (min-width: 320px) {
+            gap: 4px;
+            padding-right: 10px;
+        }
+
+        @media (min-width: 481px) {
+            gap: 8px;
+            padding-right: 30px;
+        }
+
+        @media (min-width: 769px) {
+            gap: 12px;
+            padding-right: 60px;
+        }
+
+        @media (min-width: 1025px) {
+            gap: 16px;
+            padding-right: 90px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+    }
+}
