@@ -5,7 +5,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-
 }
 
 header {
@@ -44,52 +43,6 @@ header {
                 padding-left: 12px;
             }
         }
-
-        .menus {
-            list-style-type: none;
-            overflow: hidden;
-            display: flex;
-            flex-direction: row;
-
-
-            @media (min-width: 320px) {
-                gap: 4px;
-            }
-
-            @media (min-width: 481px) {
-                gap: 8px;
-            }
-
-            @media (min-width: 769px) {
-                gap: 12px;
-            }
-
-            @media (min-width: 1025px) {
-                gap: 16px;
-            }
-
-            li {
-                a {
-                    text-decoration: none;
-
-                    @media (min-width: 320px) {
-                        font-size: 10px;
-                    }
-
-                    @media (min-width: 481px) {
-                        font-size: 10px;
-                    }
-
-                    @media (min-width: 769px) {
-                        font-size: 15px;
-                    }
-
-                    @media (min-width: 1025px) {
-                        font-size: 18px;
-                    }
-                }
-            }
-        }
     }
 
     .second_part {
@@ -126,26 +79,70 @@ header {
     }
 }
 
+.menus {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+
+    @media (min-width: 320px) {
+        gap: 4px;
+    }
+
+    @media (min-width: 481px) {
+        gap: 8px;
+    }
+
+    @media (min-width: 769px) {
+        gap: 12px;
+    }
+
+    @media (min-width: 1025px) {
+        gap: 16px;
+    }
+
+    li {
+        a {
+            text-decoration: none;
+
+            @media (min-width: 320px) {
+                font-size: 10px;
+            }
+
+            @media (min-width: 481px) {
+                font-size: 10px;
+            }
+
+            @media (min-width: 769px) {
+                font-size: 15px;
+            }
+
+            @media (min-width: 1025px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
 .hero {
     height: 50px;
     display: flex;
-    margin: 0;
-    padding: 0;
     align-items: center;
     background-color: #1e3932;
     color: #f1f8f6;
 
-    @media (min-width: 320px) {
+    @media (min-width: 480px) {
         padding-left: 30px;
         font-size: 4px;
     }
 
-    @media (min-width: 481px) {
+    @media (min-width: 600px) {
         padding-left: 60px;
         font-size: 6px;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 801px) {
         padding-left: 90px;
         font-size: 8px;
     }
@@ -154,14 +151,82 @@ header {
         padding-left: 120px;
         font-size: 9px;
     }
+
+    @media (min-width:1281px) {
+        padding-left: 150px;
+        font-size: 11px;
+        /* hi-res laptops and desktops */
+    }
 }
 
 .container {
     display: flex;
-    height: 500px;
     flex-direction: column;
     justify-content: center;
+  
+
+}
+
+.StarGround {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../pics/background/reward_background.jpeg);
     background-color: #d4e9e2;
-    background: url(../pics/background/reward_background.jpeg) no-repeat center center fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center right;
+
+    @media (min-width:480px) {
+        height: 200px;
+        background-size: 300px 200px;
+        padding-left: 8px;
+
+        /* smartphones, Android phones, landscape iPhone */
+    }
+
+    @media (min-width:600px) {
+        height: 400px;
+        background-size: 300px 400px;
+        padding-left: 10px;
+        /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    }
+
+    @media (min-width:801px) {
+        height: 600px;
+        background-size: 300px 600px;
+        padding-left: 150px;
+    }
+
+    @media (min-width:1025px) {
+        height: 820px;
+        background-size: 1220px 820px;
+        padding-left: 20px;
+        /* big landscape tablets, laptops, and desktops */
+    }
+
+    @media (min-width:1281px) {
+        height: 850px;
+        background-size: 1420px 850px;
+        padding-left: 30px;
+        /* hi-res laptops and desktops */
+    }
+
+    a {
+        color: #000;
+    }
+
+    h1 {
+        white-space: normal;
+    }
+}
+
+.started {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
 }
